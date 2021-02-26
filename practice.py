@@ -407,6 +407,11 @@
 
 # num={i:i*i for i in range(1,5)}
 # print(num)
+
+# a=2
+# num=[i for i in range(a)]
+# print(num)
+
                   #============= dict =================
 
 # dict={'name':'vivek','age':23}
@@ -495,6 +500,7 @@
 #                 c=a/b
 #                 return('division of {} / {} = {}'.format(a,b,c))
 
+
 # if __name__ == '__main__':
 #         a=int(input('first value : '))
 #         b=int(input('first value : '))
@@ -502,7 +508,39 @@
 #         result=calculator()
 
 
+# import pywhatkit as kit 
+# # kit.sendwhatmsg('+919877619142','helo tont',19,3)
+# kit.playonyt('hindi songs')
 
+         #================== classes and object ==============
 
+# class computer:
+#         def __init__(self,ram,prosessor,storage):
+#                 self.ram=ram
+#                 self.prosessor=prosessor
+#                 self.storage=storage
+#         def brand(self,brand_name):
+#                 print('Brand = {} \nProsessor = {} \nram = {} \nstorage = {}'.format(brand_name,self.prosessor,self.ram,self.storage))
 
+# hp=computer(4,'i3','1tb')
+# hp.brand('HP')
+# dell=computer(8,'i5','512')
+# dell.brand('DELL')
+
+class student:
+        def __init__(self,name,course,roll_no):
+                self.name=name
+                self.course=course
+                self.roll_no=roll_no
+        def branch(self,branch):
+                print('student name = {}\ncourse = {}\nroll no = {}\nbranch = {}'.format(self.name,self.course,self.roll_no,branch))
+        def skill(self,skill):
+                print('skill = {}'.format(skill))        
+        
+student1=student('vivek','btech',1234)
+student1.branch('cse')
+student1.skill('python')
+student2=student('akhil','btech',1534)
+student2.branch('civil')
+student2.skill('java')
 

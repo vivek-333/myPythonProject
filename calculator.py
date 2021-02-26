@@ -11,9 +11,13 @@ def calculator():
         elif operator=='/':
                 c=a/b
                 return('division of {} / {} = {}'.format(a,b,c))
+        
 
 if __name__ == '__main__':
-        a=int(input('first value : '))
-        b=int(input('first value : '))
-        operator=input()
-        result=calculator()
+        while True:
+                a=int(input('first value : '))
+                b=int(input('first value : '))
+                operator=input('what you want ( + - * / ) : ')
+                result=calculator()
+                
+                print(result)
