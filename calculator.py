@@ -16,8 +16,8 @@ def calculator():
 if __name__ == '__main__':
         while True:
                 a=int(input('first value : '))
-                b=int(input('first value : '))
                 operator=input('what you want ( + - * / ) : ')
+                b=int(input('second value : '))
                 result=calculator()
                 
                 print(result)
